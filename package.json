@@ -1,8 +1,8 @@
 {
+  "homepage": "https://Mrprayag770.github.io/acm-clubwebiste1",
   "name": "doob",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://doob.rainbowit.net/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
@@ -32,6 +32,8 @@
   },
   "scripts": {
     "start": "set PORT=3005 && react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
